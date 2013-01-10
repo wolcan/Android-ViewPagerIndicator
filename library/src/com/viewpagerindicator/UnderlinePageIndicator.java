@@ -385,8 +385,7 @@ public class UnderlinePageIndicator extends View implements PageIndicator {
             super.writeToParcel(dest, flags);
             dest.writeInt(currentPage);
         }
-
-        @SuppressWarnings("UnusedDeclaration")
+        
         public static final Creator<SavedState> CREATOR = new Creator<SavedState>() {
             @Override
             public SavedState createFromParcel(Parcel in) {
